@@ -1,0 +1,294 @@
++ module load gcc/11.3.0 cuda/12.4.1 openmpi_cuda/4.0.5 nccl/2.19.3
+++ /usr/bin/modulecmd bash load gcc/11.3.0 cuda/12.4.1 openmpi_cuda/4.0.5 nccl/2.19.3
++ eval CPATH=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/include:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/include:/home/center/opt/x86_64/cores/cuda/12.4.1/extras/CUPTI/include:/home/center/opt/x86_64/cores/cuda/12.4.1/include:/home/center/opt/x86_64/cores/gcc/11.3.0/include ';export' 'CPATH;CUDA_HOME=/home/center/opt/x86_64/cores/cuda/12.4.1' ';export' 'CUDA_HOME;CUDA_PATH=/home/center/opt/x86_64/cores/cuda/12.4.1' ';export' 'CUDA_PATH;FLOW_CORE_NAME=gcc' ';export' 'FLOW_CORE_NAME;FLOW_CORE_VER=11' ';export' 'FLOW_CORE_VER;FLOW_CUDA_NAME=cuda' ';export' 'FLOW_CUDA_NAME;FLOW_CUDA_VER=12' ';export' 'FLOW_CUDA_VER;FLOW_MPI_CUDA_NAME=openmpi_cuda' ';export' 'FLOW_MPI_CUDA_NAME;FLOW_MPI_CUDA_VER=4' ';export' 'FLOW_MPI_CUDA_VER;FLOW_MPI_NAME=openmpi' ';export' 'FLOW_MPI_NAME;FLOW_MPI_VER=4' ';export' 'FLOW_MPI_VER;INCLUDE_PATH=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/include' ';export' 'INCLUDE_PATH;LD_LIBRARY_PATH=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/lib:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/lib:/home/center/opt/x86_64/cores/cuda/12.4.1/extras/CUPTI/lib64:/home/center/opt/x86_64/cores/cuda/12.4.1/lib64:/home/center/opt/x86_64/cores/gcc/11.3.0/lib64' ';export' 'LD_LIBRARY_PATH;LIBRARY_PATH=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/lib:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/lib:/home/center/opt/x86_64/cores/cuda/12.4.1/lib64:/home/center/opt/x86_64/cores/gcc/11.3.0/lib64' ';export' 'LIBRARY_PATH;LOADEDMODULES=gcc/11.3.0:cuda/12.4.1:openmpi_cuda/4.0.5:nccl/2.19.3' ';export' 'LOADEDMODULES;MANPATH=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/share/man:/home/center/opt/x86_64/cores/gcc/11.3.0/share/man:/usr/local/share/man:/usr/share/man' ';export' 'MANPATH;MODULEPATH=/home/center/opt/x86_64/modulefiles/CX/mpi/gcc/11/cuda/12/openmpi_cuda/4:/home/center/opt/x86_64/modulefiles/CX/mpi/gcc/11/openmpi/4:/home/center/opt/x86_64/modulefiles/CX/cuda/gcc/11/cuda/12:/home/center/opt/x86_64/modulefiles/CX/compiler/gcc/11:/home/center/opt/x86_64/modulefiles/CX/core:/center/local/app/x86/hpci/modulefiles' ';export' 'MODULEPATH;NCCL_DIR=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3' ';export' 'NCCL_DIR;NCCL_INC=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/include' ';export' 'NCCL_INC;NCCL_LIB=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/lib' ';export' 'NCCL_LIB;OMPI_MCA_btl=\^openib,uct' ';export' 'OMPI_MCA_btl;OMPI_MCA_plm_rsh_agent=/usr/bin/pjrsh' ';export' 'OMPI_MCA_plm_rsh_agent;OPENMPI_DIR=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5' ';export' 'OPENMPI_DIR;OPENMPI_INC=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/include' ';export' 'OPENMPI_INC;OPENMPI_LIB=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/lib' ';export' 'OPENMPI_LIB;PATH=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin' ';export' 'PATH;PKG_CONFIG_PATH=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/lib/pkgconfig:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/lib/pkgconfig' ';export' 'PKG_CONFIG_PATH;_LMFILES_=/home/center/opt/x86_64/modulefiles/CX/core/gcc/11.3.0:/home/center/opt/x86_64/modulefiles/CX/compiler/gcc/11/cuda/12.4.1:/home/center/opt/x86_64/modulefiles/CX/cuda/gcc/11/cuda/12/openmpi_cuda/4.0.5:/home/center/opt/x86_64/modulefiles/CX/cuda/gcc/11/cuda/12/nccl/2.19.3' ';export' '_LMFILES_;'
+++ CPATH=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/include:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/include:/home/center/opt/x86_64/cores/cuda/12.4.1/extras/CUPTI/include:/home/center/opt/x86_64/cores/cuda/12.4.1/include:/home/center/opt/x86_64/cores/gcc/11.3.0/include
+++ export CPATH
+++ CUDA_HOME=/home/center/opt/x86_64/cores/cuda/12.4.1
+++ export CUDA_HOME
+++ CUDA_PATH=/home/center/opt/x86_64/cores/cuda/12.4.1
+++ export CUDA_PATH
+++ FLOW_CORE_NAME=gcc
+++ export FLOW_CORE_NAME
+++ FLOW_CORE_VER=11
+++ export FLOW_CORE_VER
+++ FLOW_CUDA_NAME=cuda
+++ export FLOW_CUDA_NAME
+++ FLOW_CUDA_VER=12
+++ export FLOW_CUDA_VER
+++ FLOW_MPI_CUDA_NAME=openmpi_cuda
+++ export FLOW_MPI_CUDA_NAME
+++ FLOW_MPI_CUDA_VER=4
+++ export FLOW_MPI_CUDA_VER
+++ FLOW_MPI_NAME=openmpi
+++ export FLOW_MPI_NAME
+++ FLOW_MPI_VER=4
+++ export FLOW_MPI_VER
+++ INCLUDE_PATH=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/include
+++ export INCLUDE_PATH
+++ LD_LIBRARY_PATH=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/lib:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/lib:/home/center/opt/x86_64/cores/cuda/12.4.1/extras/CUPTI/lib64:/home/center/opt/x86_64/cores/cuda/12.4.1/lib64:/home/center/opt/x86_64/cores/gcc/11.3.0/lib64
+++ export LD_LIBRARY_PATH
+++ LIBRARY_PATH=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/lib:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/lib:/home/center/opt/x86_64/cores/cuda/12.4.1/lib64:/home/center/opt/x86_64/cores/gcc/11.3.0/lib64
+++ export LIBRARY_PATH
+++ LOADEDMODULES=gcc/11.3.0:cuda/12.4.1:openmpi_cuda/4.0.5:nccl/2.19.3
+++ export LOADEDMODULES
+++ MANPATH=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/share/man:/home/center/opt/x86_64/cores/gcc/11.3.0/share/man:/usr/local/share/man:/usr/share/man
+++ export MANPATH
+++ MODULEPATH=/home/center/opt/x86_64/modulefiles/CX/mpi/gcc/11/cuda/12/openmpi_cuda/4:/home/center/opt/x86_64/modulefiles/CX/mpi/gcc/11/openmpi/4:/home/center/opt/x86_64/modulefiles/CX/cuda/gcc/11/cuda/12:/home/center/opt/x86_64/modulefiles/CX/compiler/gcc/11:/home/center/opt/x86_64/modulefiles/CX/core:/center/local/app/x86/hpci/modulefiles
+++ export MODULEPATH
+++ NCCL_DIR=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3
+++ export NCCL_DIR
+++ NCCL_INC=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/include
+++ export NCCL_INC
+++ NCCL_LIB=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/lib
+++ export NCCL_LIB
+++ OMPI_MCA_btl='^openib,uct'
+++ export OMPI_MCA_btl
+++ OMPI_MCA_plm_rsh_agent=/usr/bin/pjrsh
+++ export OMPI_MCA_plm_rsh_agent
+++ OPENMPI_DIR=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5
+++ export OPENMPI_DIR
+++ OPENMPI_INC=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/include
+++ export OPENMPI_INC
+++ OPENMPI_LIB=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/lib
+++ export OPENMPI_LIB
+++ PATH=/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin
+++ export PATH
+++ PKG_CONFIG_PATH=/home/center/opt/x86_64/apps/cuda/12/nccl/2.19.3/lib/pkgconfig:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ _LMFILES_=/home/center/opt/x86_64/modulefiles/CX/core/gcc/11.3.0:/home/center/opt/x86_64/modulefiles/CX/compiler/gcc/11/cuda/12.4.1:/home/center/opt/x86_64/modulefiles/CX/cuda/gcc/11/cuda/12/openmpi_cuda/4.0.5:/home/center/opt/x86_64/modulefiles/CX/cuda/gcc/11/cuda/12/nccl/2.19.3
+++ export _LMFILES_
+++ /home/PH/miniconda3/bin/conda shell.bash hook
++ eval 'export CONDA_EXE='\''/home/PH/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/home/PH/miniconda3/bin/python'\''
+
+# Copyright (C) 2012 Anaconda, Inc
+# SPDX-License-Identifier: BSD-3-Clause
+__conda_exe() (
+    "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"
+)
+
+__conda_hashr() {
+    if [ -n "${ZSH_VERSION:+x}" ]; then
+        \rehash
+    elif [ -n "${POSH_VERSION:+x}" ]; then
+        :  # pass
+    else
+        \hash -r
+    fi
+}
+
+__conda_activate() {
+    if [ -n "${CONDA_PS1_BACKUP:+x}" ]; then
+        # Handle transition from shell activated with conda <= 4.3 to a subsequent activation
+        # after conda updated to >= 4.4. See issue #6173.
+        PS1="$CONDA_PS1_BACKUP"
+        \unset CONDA_PS1_BACKUP
+    fi
+    \local ask_conda
+    ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix "$@")" || \return
+    \eval "$ask_conda"
+    __conda_hashr
+}
+
+__conda_reactivate() {
+    \local ask_conda
+    ask_conda="$(PS1="${PS1:-}" __conda_exe shell.posix reactivate)" || \return
+    \eval "$ask_conda"
+    __conda_hashr
+}
+
+conda() {
+    \local cmd="${1-__missing__}"
+    case "$cmd" in
+        activate|deactivate)
+            __conda_activate "$@"
+            ;;
+        install|update|upgrade|remove|uninstall)
+            __conda_exe "$@" || \return
+            __conda_reactivate
+            ;;
+        *)
+            __conda_exe "$@"
+            ;;
+    esac
+}
+
+if [ -z "${CONDA_SHLVL+x}" ]; then
+    \export CONDA_SHLVL=0
+    # In dev-mode CONDA_EXE is python.exe and on Windows
+    # it is in a different relative location to condabin.
+    if [ -n "${_CE_CONDA:+x}" ] && [ -n "${WINDIR+x}" ]; then
+        PATH="$(\dirname "$CONDA_EXE")/condabin${PATH:+":${PATH}"}"
+    else
+        PATH="$(\dirname "$(\dirname "$CONDA_EXE")")/condabin${PATH:+":${PATH}"}"
+    fi
+    \export PATH
+
+    # We'\''re not allowing PS1 to be unbound. It must at least be set.
+    # However, we'\''re not exporting it, which can cause problems when starting a second shell
+    # via a first shell (i.e. starting zsh from bash).
+    if [ -z "${PS1+x}" ]; then
+        PS1=
+    fi
+fi
+
+conda activate base'
+++ export CONDA_EXE=/home/PH/miniconda3/bin/conda
+++ CONDA_EXE=/home/PH/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/home/PH/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/home/PH/miniconda3/bin/python
+++ '[' -z '' ']'
+++ export CONDA_SHLVL=0
+++ CONDA_SHLVL=0
+++ '[' -n '' ']'
+++++ dirname /home/PH/miniconda3/bin/conda
++++ dirname /home/PH/miniconda3/bin
+++ PATH=/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin
+++ export PATH
+++ '[' -z '' ']'
+++ PS1=
+++ conda activate base
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate base
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate base
++++ /home/PH/miniconda3/bin/conda shell.posix activate base
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/home/PH/miniconda3/bin:/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin'\''
+export CONDA_PREFIX='\''/home/PH/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/home/PH/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/home/PH/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/home/PH/miniconda3/bin:/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin'\''
+export CONDA_PREFIX='\''/home/PH/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/home/PH/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/home/PH/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/home/PH/miniconda3/bin:/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin
++++ PATH=/home/PH/miniconda3/bin:/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin
++++ export CONDA_PREFIX=/home/PH/miniconda3
++++ CONDA_PREFIX=/home/PH/miniconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/home/PH/miniconda3/bin/conda
++++ CONDA_EXE=/home/PH/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/home/PH/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/home/PH/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate llm_on_supercomp
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate llm_on_supercomp
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate llm_on_supercomp
+++ /home/PH/miniconda3/bin/conda shell.posix activate llm_on_supercomp
++ ask_conda='PS1='\''(llm_on_supercomp) '\''
+export PATH='\''/home/PH/miniconda3/envs/llm_on_supercomp/bin:/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin'\''
+export CONDA_PREFIX='\''/home/PH/miniconda3/envs/llm_on_supercomp'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''llm_on_supercomp'\''
+export CONDA_PROMPT_MODIFIER='\''(llm_on_supercomp) '\''
+export CONDA_PREFIX_1='\''/home/PH/miniconda3'\''
+export CONDA_EXE='\''/home/PH/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/home/PH/miniconda3/bin/python'\'''
++ eval 'PS1='\''(llm_on_supercomp) '\''
+export PATH='\''/home/PH/miniconda3/envs/llm_on_supercomp/bin:/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin'\''
+export CONDA_PREFIX='\''/home/PH/miniconda3/envs/llm_on_supercomp'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''llm_on_supercomp'\''
+export CONDA_PROMPT_MODIFIER='\''(llm_on_supercomp) '\''
+export CONDA_PREFIX_1='\''/home/PH/miniconda3'\''
+export CONDA_EXE='\''/home/PH/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/home/PH/miniconda3/bin/python'\'''
+++ PS1='(llm_on_supercomp) '
+++ export PATH=/home/PH/miniconda3/envs/llm_on_supercomp/bin:/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin
+++ PATH=/home/PH/miniconda3/envs/llm_on_supercomp/bin:/home/PH/miniconda3/condabin:/home/center/opt/x86_64/apps/gcc/11/cuda/12/openmpi_cuda/4.0.5/bin:/home/center/opt/x86_64/cores/cuda/12.4.1/bin:/home/center/opt/x86_64/cores/gcc/11.3.0/bin:/opt/conda/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/PH/.local/bin:/home/PH/bin
+++ export CONDA_PREFIX=/home/PH/miniconda3/envs/llm_on_supercomp
+++ CONDA_PREFIX=/home/PH/miniconda3/envs/llm_on_supercomp
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=llm_on_supercomp
+++ CONDA_DEFAULT_ENV=llm_on_supercomp
+++ export 'CONDA_PROMPT_MODIFIER=(llm_on_supercomp) '
+++ CONDA_PROMPT_MODIFIER='(llm_on_supercomp) '
+++ export CONDA_PREFIX_1=/home/PH/miniconda3
+++ CONDA_PREFIX_1=/home/PH/miniconda3
+++ export CONDA_EXE=/home/PH/miniconda3/bin/conda
+++ CONDA_EXE=/home/PH/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/home/PH/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/home/PH/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
+++ dirname /data/group1/PH/experiment_field/llm_on_supercomp/exp/.d0001996132
++ cd /data/group1/PH/experiment_field/llm_on_supercomp/exp
++ export MODEL_NAME_OR_PATH=Qwen/Qwen3-32B
++ MODEL_NAME_OR_PATH=Qwen/Qwen3-32B
++ export INPUT_DATA_PATH=../data/metainfo_top30.jsonl
++ INPUT_DATA_PATH=../data/metainfo_top30.jsonl
++ export MODEL_OUTPUT_DIR=./output
++ MODEL_OUTPUT_DIR=./output
++ python infer_device_map_on_1node4gpu.py --model_name_or_path Qwen/Qwen3-32B --input_data_path ../data/metainfo_top30.jsonl --model_output_dir ./output
+Start
+
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading checkpoint shards:   6%|▌         | 1/17 [00:00<00:04,  3.39it/s]
+Loading checkpoint shards:  12%|█▏        | 2/17 [00:00<00:05,  2.53it/s]
+Loading checkpoint shards:  18%|█▊        | 3/17 [00:01<00:05,  2.67it/s]
+Loading checkpoint shards:  24%|██▎       | 4/17 [00:01<00:05,  2.44it/s]
+Loading checkpoint shards:  29%|██▉       | 5/17 [00:01<00:04,  2.56it/s]
+Loading checkpoint shards:  35%|███▌      | 6/17 [00:02<00:04,  2.63it/s]
+Loading checkpoint shards:  41%|████      | 7/17 [00:02<00:04,  2.50it/s]
+Loading checkpoint shards:  47%|████▋     | 8/17 [00:03<00:04,  2.18it/s]
+Loading checkpoint shards:  53%|█████▎    | 9/17 [00:03<00:03,  2.42it/s]
+Loading checkpoint shards:  59%|█████▉    | 10/17 [00:03<00:02,  2.55it/s]
+Loading checkpoint shards:  65%|██████▍   | 11/17 [00:04<00:02,  2.65it/s]
+Loading checkpoint shards:  71%|███████   | 12/17 [00:04<00:01,  2.85it/s]
+Loading checkpoint shards:  76%|███████▋  | 13/17 [00:04<00:01,  2.77it/s]
+Loading checkpoint shards:  82%|████████▏ | 14/17 [00:05<00:01,  2.53it/s]
+Loading checkpoint shards:  88%|████████▊ | 15/17 [00:05<00:00,  2.45it/s]
+Loading checkpoint shards:  94%|█████████▍| 16/17 [00:06<00:00,  3.11it/s]
+Loading checkpoint shards: 100%|██████████| 17/17 [00:06<00:00,  2.79it/s]
+OrderedDict([('model.embed_tokens', 0), ('model.layers.0', 0), ('model.layers.1', 0), ('model.layers.2', 0), ('model.layers.3', 0), ('model.layers.4', 0), ('model.layers.5', 0), ('model.layers.6', 0), ('model.layers.7', 0), ('model.layers.8', 0), ('model.layers.9', 0), ('model.layers.10', 0), ('model.layers.11', 0), ('model.layers.12', 0), ('model.layers.13', 0), ('model.layers.14', 0), ('model.layers.15', 0), ('model.layers.16', 0), ('model.layers.17', 0), ('model.layers.18', 0), ('model.layers.19', 0), ('model.layers.20', 0), ('model.layers.21', 0), ('model.layers.22', 0), ('model.layers.23', 0), ('model.layers.24', 0), ('model.layers.25', 0), ('model.layers.26', 0), ('model.layers.27', 0), ('model.layers.28', 0), ('model.layers.29', 0), ('model.layers.30', 0), ('model.layers.31', 0), ('model.layers.33', 1), ('model.layers.34', 1), ('model.layers.35', 1), ('model.layers.36', 1), ('model.layers.37', 1), ('model.layers.38', 1), ('model.layers.39', 1), ('model.layers.40', 1), ('model.layers.41', 1), ('model.layers.42', 1), ('model.layers.43', 1), ('model.layers.44', 1), ('model.layers.45', 1), ('model.layers.46', 1), ('model.layers.47', 1), ('model.layers.48', 1), ('model.layers.49', 1), ('model.layers.50', 1), ('model.layers.51', 1), ('model.layers.52', 1), ('model.layers.53', 1), ('model.layers.54', 1), ('model.layers.55', 1), ('model.layers.56', 1), ('model.layers.57', 1), ('model.layers.58', 1), ('model.layers.59', 1), ('model.layers.60', 1), ('model.layers.61', 1), ('model.layers.62', 1), ('model.layers.63', 1), ('model.norm', 1), ('model.rotary_emb', 1), ('lm_head', 1), ('model.layers.32', 1)])
+Finish
